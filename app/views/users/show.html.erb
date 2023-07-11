@@ -1,0 +1,13 @@
+<% if @user %>
+  <div>Fullname: <%= @user.fullname %></div>
+  <div>Username: <%= @user.username %></div>
+  <div>Address: <%= @user.address %></div>
+  <div>Age:  <%= @user.age %></div>
+  <div>Email: <%= @user.email %></div>
+  <br>
+  <%= link_to 'Back to home path', root_path%> |
+  <%= link_to 'Edit', edit_user_path(@user.id) %> |
+  <%= link_to 'Delete', user_path(@user.id), data: { method: :delete, confirm: "Do you want to delete this user?" } %>
+  <div>----------------------</div>
+  <br>
+  <% end %>

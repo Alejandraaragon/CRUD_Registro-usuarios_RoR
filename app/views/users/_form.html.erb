@@ -1,0 +1,19 @@
+<%= form_with model: @user, html: { autocomplete: "off" } do |f| %>
+
+    <% if @user.errors.any? %>
+       <% @user.errors.each do |e| %>
+          <div>
+            <%= e.full_message %>
+          </div>
+       <% end %>
+       <% end %>
+  
+      <%= f.text_field :fullname, placeholder: "Full name" %>
+      <%= f.text_field :username, placeholder: "Username" %>
+      <%= f.text_field :age, placeholder: "Age" %>
+      <%= f.text_field :address, placeholder: "Address" %>
+      <%= f.email_field :email, placeholder: "Email" %>
+      <%= f.password_field :password_digest, placeholder: "Password" %>
+      <%= f.password_field :password_digest_confirmation, placeholder: "Password confirm" %>
+      <%= f.submit %>
+  <% end %>
