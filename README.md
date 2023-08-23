@@ -1,24 +1,26 @@
-# README
+# CRUD Registro de usuarios
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Tecnologías Utilizadas
 
-Things you may want to cover:
+* Ruby on Rails 
+* PostgreSQL
 
-* Ruby version
+## Descripción
+Esta aplicación registra usuarios. El formulario esta constituido por Fullname, Username, Direccion, Edad, E-mail, Password y confirmacion de Password. Responde a un formato CRUD asi que muestra la informacion en una lista y de forma individual. Tambien edita cada registro y los elimina.    
 
-* System dependencies
 
-* Configuration
+## Como se ve registro de usuarios
 
-* Database creation
+* Lista de usuarios
 
-* Database initialization
+![img1](/assets_git/crud_Users1RoR.png)
 
-* How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
+* Formulario de creación
 
-* Deployment instructions
+![img2](/assets_git/crud_Users2RoR.png)
 
-* ...
+
+* Información de cada usuario
+
+![img3](/assets_git/crud_Users3RoR.png)
